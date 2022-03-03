@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: houazzan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: houazzan <houazzan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 19:54:36 by houazzan          #+#    #+#             */
-/*   Updated: 2021/11/21 02:53:42 by houazzan         ###   ########.fr       */
+/*   Updated: 2022/03/03 18:46:14 by houazzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
 
 int	ft_wor(char *r_s, char c, size_t size)
 {
@@ -18,6 +18,8 @@ int	ft_wor(char *r_s, char c, size_t size)
 
 	i = 0;
 	word = 0;
+	if (r_s[i] != c && r_s[i] != '\0')
+		word++;
 	if (r_s[i] != c && r_s[size - 1] == c)
 		word++;
 	while (r_s[i])
